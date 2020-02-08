@@ -68,19 +68,3 @@ let step = () => {
   }, 0)
 }
 step()
-
-let step_while = () => {
-  setTimeout(() => {
-    if (n < string.length) {
-      //   if (string[n] === "\n") {
-      //     string2 += "<br>"
-      //   } else {
-      //     string2 += string[n]
-      //   }
-      string2 += string[n] === "\n" ? "<br>" : string[n]
-      demo.innerHTML = string2
-      n += 1
-      step_while()
-    }
-  }, 100)
-}
